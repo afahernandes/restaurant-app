@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        card_view:cardElevation="5dp"
+        card_view:cardCornerRadius="7dp"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardPreventCornerOverlap="false"
+        android:layout_margin="@dimen/card_margin">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:src="@drawable/product_image"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/txtatas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="2dp"
+                android:maxLines="1"
+                android:text="Winter is coming"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtbawah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtatas"
+                android:layout_marginLeft="5dp"
+                 android:layout_marginBottom="2dp"
+                android:maxLines="2"
+                android:textSize="12dp"
+                android:text="Winter is coming"
+                android:textStyle="bold" />
+
+
+
+            <RatingBar
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtbawah"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="2dp"
+
+                android:rating="5" />
+            <TextView
+                android:id="@+id/txtjarak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20 Km"
+                android:layout_below="@id/txtbawah"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="2dp"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

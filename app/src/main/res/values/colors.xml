@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF5722</color>
+    <color name="colorPrimaryDark">#FF5722</color>
+    <color name="colorAccent">#121212</color>
+    <color name="colorBlue">#367e90</color>
+    <color name="colorOpposite">#60c002</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorLight">#7F7F7F</color>
+    <color name="colorBorder">#e6e3e2</color>
+
+    <color name="promotion_blue">#367e90</color>
+    <color name="promotion_red">#ae5900</color>
+    <color name="promotion_ivory">#998501</color>
+
+    <color name="backgroundcolor">#FCFCFC</color>
+    <color name="lightgrey">#ededed</color>
+    <color name="deeppurple">#08AE9F</color>
+    <color name="yello">#FFB300</color>
+    <color name="green">#08AE9F</color>
+    <color name="red">#fb4d1d</color>
+
+
+    <color name="blue">#08AE9F</color>
+
+
+    <color name="facebookBlue">#08AE9F</color>
+    <color name="twitterBlue">#08AE9F</color>
+    <color name="googleRed">#D03E2F</color>
+
+
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="editTextBG">#DADADA</color>
+
+    <color name="textColor">#6e6e6e</color>
+    <color name="followersBg">#65DCE5</color>
+    <color name="followingBg">#49BEFF</color>
+
+    <color name="address">#08AE9F</color>
+    <color name="followers">#08AE9F</color>
+    <color name="headings">#08AE9F</color>
+    <color name="solidCircle">#AAFFFFFF</color>
+    <color name="circleBorder">#50FFFFFF</color>
+    <color name="gradEnd">#67EFC8</color>
+    <color name="gradStart">#63C9FF</color>
+
+
+</resources>

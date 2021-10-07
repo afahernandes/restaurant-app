@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:orientation="vertical">
+    <!-- Main ListView
+         Jangan lupa selalu berikan id value sebagai list(@android:id/list)
+    -->
+
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/txtCari"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_margin="2dp"
+            android:background="@drawable/ic_edittext_bg"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:layout_gravity="left"/>
+
+        <Button
+            android:id="@+id/btnCari"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:layout_margin="2dp"
+            android:padding="15dp"
+            android:layout_gravity="right"
+            android:textColor="#fff"
+            android:background="@drawable/ic_tags_bk"/>
+    </LinearLayout>
+
+    <GridView
+        android:numColumns="2"
+        android:id="@+id/gridView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    </GridView>
+ 
+</LinearLayout>

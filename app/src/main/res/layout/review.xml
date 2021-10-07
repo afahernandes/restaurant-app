@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="379dp"
+                android:background="@drawable/toolbarbg"
+                android:elevation="4dp"
+                android:visibility="visible">
+
+
+                <ImageView
+                    android:id="@+id/myGambar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"/>
+
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:id="@+id/rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/productimage"
+                android:background="#fff"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:visibility="visible">
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rating"
+                android:background="#fff"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:id="@+id/txtnama_restaurant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textStyle="bold"
+                    android:text="Warung Mpok Yani"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="26dp" />
+
+                <TextView
+                    android:id="@+id/txtalamat"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_weight="1"
+                    android:text="Women's running shoes"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txtdeskripsi"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1"
+                    android:text="Women's running shoes"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp" />
+
+
+            </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:padding="10dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
+
+
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Give Me Review"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="20dp" />
+
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Stars"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <!--  telepon TextField -->
+
+                        <RatingBar
+                            android:id="@+id/ratingbar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:theme="@style/RatingBar"/>
+                            android:rating="2" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Review"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <!--  telepon TextField -->
+                        <EditText
+                            android:id="@+id/txtpesan"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:minLines="2"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+
+
+                        <!--  telepon Label -->
+             </LinearLayout>
+
+
+
+
+            <LinearLayout
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btnproses"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/ic_tags_bk"
+                        android:textColor="@color/white"
+                        android:layout_margin="5dip"
+                        android:textStyle="bold"
+                        android:text="Proses" />
+
+                    <Button
+                        android:id="@+id/btnhapus"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dip"
+                        android:text="Hapus"
+                        android:background="@drawable/ic_tags_bk"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

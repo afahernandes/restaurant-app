@@ -1,0 +1,68 @@
+<androidx.cardview.widget.CardView
+ android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    android:minWidth="300dp"
+    app:cardPreventCornerOverlap="false"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="20dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="left">
+
+        <ImageView
+            android:id="@+id/trendsThumbnail"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:src="@drawable/fashion_trends_sample"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/trendsTitle"
+            android:layout_toRightOf="@id/trendsThumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Top Trends \nfor Wedding"
+            android:textColor="#676767"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:maxLines="2"/>
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/trendsTitle"
+            android:background="#676767"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/trendsThumbnail"/>
+
+        <TextView
+            android:layout_below="@id/trendsTitle"
+            android:layout_toRightOf="@id/trendsThumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Top Trends \nfor Wedding"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:maxLines="2"/>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
